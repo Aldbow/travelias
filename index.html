@@ -22,25 +22,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
+
+    <div class="nav-container">
+        <a href="#" class="logo">travelias</a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="#about" style="--i:0;">About</a>
+            <a href="#services" style="--i:1;">Services</a>
+            <a href="#projects" style="--i:2;">Projects</a>
+            <a href="#contact" style="--i:3;">Contact</a>
+        </nav>
+    </div>
+
     <header>
-        <div class="jumbotron">
-            <img src="assets/images/logo-white.svg" alt="">
-            <h1>Travel as you wish</h1>
-            <p>Wherever you dream to go, let's make it a reality</p>
+
+        <div class="hero">
+            <img src="assets/images/logo-black.svg" alt="">
+            <h1>Welcome to Travelias</h1>
+            <p>Discover new destinations and experiences</p>
+            <br>
+            <a href="#about"><button>Learn More</button></a>
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
@@ -91,7 +106,7 @@
                         </p>
                     </div>
 
-                    <a href="#" class="btn-start">Let's explore the world</a>
+                    <a href="#services" class="btn-start">Let's explore the world</a>
                 </div>
             </div>
         </div>
@@ -186,49 +201,45 @@
             <div class="projects-container">
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="assets/images/jumbotron.jpg" alt="">
+                        <img src="assets/images/scott.jpg" alt="">
                     </div>
                     <div class="project-desc">
                         <h3>Project 1</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium aliquid debitis,
-                            quibusdam incidunt quidem rerum magni facere inventore vitae illum similique quos!
-                            Itaque, iste nihil dolores distinctio dignissimos necessitatibus quae?</p>
+                            quibusdam incidunt quidem rerum.</p>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="assets/images/jumbotron.jpg" alt="">
+                        <img src="assets/images/scott.jpg" alt="">
                     </div>
                     <div class="project-desc">
                         <h3>Project 2</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto facilis numquam vitae quia
-                            rem recusandae nihil temporibus aut, quo omnis dolore neque fuga aliquam eius
-                            repellendus totam a, sunt nam.</p>
+                            rem recusandae nihil temporibus aut.</p>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="assets/images/jumbotron.jpg" alt="">
+                        <img src="assets/images/scott.jpg" alt="">
                     </div>
                     <div class="project-desc">
                         <h3>Project 3</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis aut accusantium a
-                            recusandae quis corrupti officia nobis. Ipsum, at ratione illo id est rem voluptatibus
-                            quisquam quia, architecto tempora adipisci.</p>
+                            recusandae quis corrupti officia nobis.</p>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="assets/images/jumbotron.jpg" alt="">
+                        <img src="assets/images/scott.jpg" alt="">
                     </div>
                     <div class="project-desc">
                         <h3>Project 4</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorem tempore
-                            explicabo, impedit asperiores officia illo nemo inventore. Ipsam aperiam asperiores
-                            veritatis laudantium deserunt dolore voluptatibus expedita animi quos nobis?</p>
+                            explicabo, impedit asperiores officia illo nemo inventore.</p>
                     </div>
                 </div>
             </div>
