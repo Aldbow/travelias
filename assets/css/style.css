@@ -247,6 +247,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .services-title {
@@ -365,6 +366,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .projects-title {
@@ -433,6 +435,89 @@ header {
   object-fit: cover;
   overflow: hidden;
   border-radius: 20px;
+}
+
+/* CONTACT */
+
+.contact {
+  padding-top: 110px;
+  min-height: 100vh;
+  width: 100%;
+  background: url(../images/4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-text {
+  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+}
+
+.contact-container form input,
+textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dee2e6;
+  font-size: 18px;
+  font-weight: 400;
+  color: #212529;
+}
+
+.contact-container form,
+input,
+textarea {
+  color: #212529;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.contact-container form input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.contact-container form textarea {
+  resize: none;
+}
+
+.contact-container form input[type="submit"] {
+  background-color: #212529;
+  color: #dee2e6;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.contact-container form input[type="submit"]:hover {
+  background-color: #dee2e6;
+  color: #212529;
 }
 
 /* Responsive Breakpoints */
