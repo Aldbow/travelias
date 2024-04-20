@@ -520,9 +520,110 @@ textarea:focus {
   color: #212529;
 }
 
+/* FOOTER */
+footer {
+  width: 100%;
+  background: url(../images/4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #dee2e6;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  backdrop-filter: blur(5px);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  flex-wrap: wrap;
+  padding: 1rem 10%;
+}
+
+.footer-container h3 {
+  margin-bottom: 20px;
+}
+
+.footer-content {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 32.6%;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.footer-link {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 32.6%;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.footer-link ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer-contact {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 32.6%;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.footer-copyright {
+  padding: 0rem 10%;
+  padding-bottom: 10px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.footer-copyright p {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
 /* Responsive Breakpoints */
 
 @media (max-width: 992px) {
+  .about-1 {
+    display: none;
+  }
+
+  .about-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .nav-container {
     padding: 1.3rem 5%;
   }
@@ -576,5 +677,28 @@ textarea:focus {
     transform: translateY(0);
     opacity: 1;
     transition-delay: calc(0.15s * var(--i));
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content,
+  .footer-link,
+  .footer-contact {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-content,
+  .footer-link,
+  .footer-contact,
+  .footer-copyright p {
+    padding: 15px;
+  }
+
+  .footer-icons {
+    margin-top: 10px;
   }
 }
