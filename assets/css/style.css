@@ -11,6 +11,7 @@ body {
   background-color: black;
   min-height: 100vh;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .section-title {
@@ -106,6 +107,15 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .hero h1 {
@@ -261,6 +271,14 @@ header {
   margin-bottom: 50px;
 }
 
+.services-animation:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.services-animation:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
 .services-container {
   display: flex;
   gap: 20px;
@@ -295,6 +313,8 @@ header {
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .box i {
@@ -367,6 +387,18 @@ header {
   align-items: center;
   justify-content: center;
   padding: 20px;
+}
+
+.project-animation:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.project-animation:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+.project-animation:nth-child(4) {
+  transition-delay: 0.6s;
 }
 
 .projects-title {
@@ -699,4 +731,77 @@ a {
   .footer-icons {
     margin-top: 10px;
   }
+}
+
+/* ANIMATION */
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1.5s ease;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.hidden.slide-right {
+  transform: translateX(-100%);
+}
+
+.show.slide-right {
+  transform: translateX(0);
+}
+
+.hidden.slide-left {
+  transform: translateX(100%);
+}
+
+.show.slide-left {
+  transform: translateX(0);
+}
+
+.hidden.slide-up {
+  transform: translateY(100%);
+}
+
+.show.slide-up {
+  transform: translateY(0);
+}
+
+.hidden.slide-down {
+  transform: translateY(-100%);
+}
+
+.show.slide-down {
+  transform: translateY(0);
+}
+
+.hidden.zoomin {
+  transform: scale(0);
+}
+
+.show.zoomin {
+  transform: scale(1);
+}
+
+.hidden.zoom-in-up {
+  transform: scale(0);
+  transform-origin: bottom;
+}
+
+.show.zoom-in-up {
+  transform: scale(1);
+  transform-origin: bottom;
+}
+
+.hidden.zoom-in-down {
+  transform: scale(0);
+  transform-origin: top;
+}
+
+.show.zoom-in-down {
+  transform: scale(1);
+  transform-origin: top;
 }
